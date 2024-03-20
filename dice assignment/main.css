@@ -1,0 +1,46 @@
+.dice-container {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    height: 20vh
+}
+
+.dice {
+	width: 80px;
+	height: 80px;
+	position: relative;
+	margin: 5px;
+	border-radius: 10px;
+	background-color: rgba(255, 253, 253, 0.872);
+	border: 3px solid #000000;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('king.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+.dice-dot {
+	--top: 0%;
+	--left: 0%;
+
+	width: 15px;
+	height: 15px;
+	background-color: #170505;
+	border-radius: 50%;
+	position: absolute;
+	top: var(--top);
+	left: var(--left);
+	transform: translateX(calc(var(--left) * -1)) translateY(calc(var(--top) * -1));
+}
+
+.btn-roll-dice {
+    margin-top: 20px;
+    font-size: 24px;
+	border: 3px solid #000000;
+}
